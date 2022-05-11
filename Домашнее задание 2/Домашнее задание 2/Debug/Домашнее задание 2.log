@@ -1,3 +1,0 @@
-﻿  Домашнее задание 2.cpp
-MSVCRTD.lib(exe_main.obj) : error LNK2019: ссылка на неразрешенный внешний символ _main в функции "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\Users\IVC6-10\Downloads\Домашнее задание 2\Debug\Домашнее задание 2.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
