@@ -4,44 +4,41 @@
 
 using namespace std;
 
-//Заём
 /*
 int main()
  {
     double p , s, n, r,  S, m;
     
     setlocale (LC_ALL, "rus");
-
-    cout << "Введите сумму заёма ";
+    
     cin >>S;
 
  cout <<"\n";
 
-    cout << "Введите на какое время взят кредит (в годах) ";
+   
     cin >>n;
 
  cout <<"\n";
 
-    cout << "Введите под какой процент был взят кредит (%) ";
+    
     cin >> p;
 
     r = p / 100;
 
     if (p <= 0 or S <= 0 or  n <= 0)
     {
-        cout << "\nОшибка\n";
+        cout << "\nРћС€РёР±РєР°\n";
     }
     else
     {
         m = (S * r * pow(1 + r, n)) / (12 * (pow(1 + r, n) - 1));
 
-        cout << "\nМесячные выплаты по кредиту = "<< m<<"\n";
+        cout << "\n = "<< m<<"\n";
     }
     return 0;
  }
 */
  
-//Ссуда
 /*
 int main()
  {
@@ -50,23 +47,23 @@ int main()
     
     setlocale(LC_ALL, "rus");
 
-    cout << "Введите сумму заёма ";
+    
     cin >> S;
 
-    cout << "\nВведите на какое время взят кредит (в годах) ";
+   
     cin >> n;
 
-    cout << "\nВведите размер ежемесячных выплат по кредиту ";
+    
     cin >> m;
 
     if (m <= 0 or S <= 0 or n <= 0)
     {
-        cout << "\nОшибка\n";
+        cout << "\nРћС€РёР±РєР°\n";
     }
 
     else  if (n * 12 * m == S)
     {
-        cout << "\nПроцентная ставка = 0%\n";
+        
     }
 
     else
@@ -91,18 +88,18 @@ int main()
 
                 if (d == 0)
                 {
-                    cout << "\nПроцентная ставка = " << c << "%\n";
+                    cout << "\n = " << c << "%\n";
                 }
                 
                 else if (c == 0)                
                 {
                     
-                    cout << "\nПроцентная ставка = " << (c + e/100) << "%\n";
+                    cout << "\n = " << (c + e/100) << "%\n";
                 }
 
                 else
                 {                   
-                    cout << "\nПроцентная ставка = " << (c + e/100) << "%\n";
+                    cout << "\n = " << (c + e/100) << "%\n";
                 }
                 break;
             }
@@ -111,8 +108,7 @@ int main()
     return 0;
  }
  */
- 
-//Копирование файла
+
 /*
 int main()
 {
@@ -123,7 +119,7 @@ int main()
 
     if (!fin.is_open())
     {
-        cout << "Ошибка\n";
+        cout << "РћС€РёР±РєР°\n";
     }
     else
     {
@@ -142,7 +138,6 @@ int main()
 }
  */
 
-//Фильтр
 /*
 int main()
 {    
@@ -157,12 +152,12 @@ int main()
 
     if (!fout.is_open())
     {
-        cout << "Ошибка открытия файла!";
+        cout << "РћС€РёР±РєР°";
     }
 
     else
     {
-        fout << "193827цазшцукщпшоseigjopwiehgoweg";
+        fout << "193827Г¶Г Г§ГёГ¶ГіГЄГ№ГЇГёГ®seigjopwiehgoweg";
     }
 
     fout.close();
@@ -172,14 +167,14 @@ int main()
 
     if (!fin.is_open())
     {
-        cout << "Ошибка открытия файла!";
+        cout << "РћС€РёР±РєР°";
     }
 
     else
     {
-        char буфер;
+        char g;
 
-        while (fin.get(буфер))
+        while (fin.get(g))
         {
             if (fin.eof())
             {
@@ -188,9 +183,9 @@ int main()
 
             for (int i = 0; i <= 9;)
             {
-                if (буфер == cifri[i])
+                if (g == cifri[i])
                 {
-                    cout << буфер << " ";
+                    cout << g << " ";
                     break;
                 }
 
@@ -206,7 +201,6 @@ int main()
 }
 */
 
-//Сортировка букв
 /*
 int main()
 {
@@ -216,18 +210,18 @@ int main()
         
     int const SIZE = 30;
 
-    string ответ;
+    string g;
 
     ofstream fout;
     fout.open(path);
 
     if (!fout.is_open())
     {
-        cout << "Ошибка\n";
+        cout << "РћС€РёР±РєР°\n";
     }
     else
     {
-        fout << "jъfiNHалсUbdYGpлЯYDZctФЛСGDYop";
+        fout << "dfgdgg";
     }
 
     fout.close();
@@ -237,18 +231,16 @@ int main()
 
     if (!fin.is_open())
     {
-        cout << "Ошибка\n";
+        cout << "РћС€РёР±РєР°\n";
     }
     else
     { 
         int i = 0;
 
-        fin >> ответ;
+        fin >> g;
     }
 
     fin.close();    
-
-    //Начало сортировки чисел
 
     char buf;    
             
@@ -262,25 +254,23 @@ int main()
                 break;
             }
 
-            if ((int)ответ[j] > (int)ответ[i])
+            if ((int)g[j] > (int)g[i])
             {
-                buf = ответ[j];
-                ответ[j] = ответ[i];
-                ответ[i] = buf;
+                buf = g[j];
+                g[j] = g[i];
+                g[i] = buf;
 
                 break;
             }
 
-            if ((int)ответ[j] <= (int)ответ[i])
+            if ((int)g[j] <= (int)g[i])
             {
                 i++;                 
             }
         }
     }
-
-    //Конец сортировки чисел     
-
-    cout << ответ << endl;
+  
+    cout << g << endl;
 
     return 0;
 }
