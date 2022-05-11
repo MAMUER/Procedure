@@ -1,53 +1,51 @@
 #include <iostream>
 using namespace std;
 
-//Имя
+//РРјСЏ
 /*
 int main()
  {
 	setlocale (LC_ALL, "rus");
 
-	cout << "Николаенко Михаил Григорьевич\n";
+	cout << "РќРёРєРѕР»Р°РµРЅРєРѕ РњРёС…Р°РёР» РіСЂРёРіРѕСЂСЊРµРІРёС‡\n";
 	return 0;
  }
 */ 
 
-//Арифметика
 /*
 int main()
 {
 setlocale(LC_ALL, "rus");
 double a, b;
-cout << "\nВведите первое число ";
+cout << "\nР’РІРµРґРёС‚Рµ a ";
 cin >> a;
-cout << "\nВведите второе число ";
+cout << "\nР’РІРµРґРёС‚Рµ b ";
 cin >> b;
-cout << "\nСумма чисел "<<a+b<<"\n";
-cout << "\nРазность чисел "<<a-b << "\n";
-cout << "\nПроизведение чисел "<<a*b << "\n";
+cout << "\nРЎСѓРјРјР° "<<a+b<<"\n";
+cout << "\nР Р°Р·РЅРёС†Р° "<<a-b << "\n";
+cout << "\nРџСЂРѕРёР·РІРµРґРµРЅРёРµ "<<a*b << "\n";
 if (b != 0)
 {
-	cout << "\nЧастное чисел "<<a / b << "\n";
+	cout << "\nРћС‚РЅРѕС€РµРЅРёРµ "<<a / b << "\n";
 }
 else
 {
-	cout << "\nДелить на ноль нельзя\n";
+	cout << "\nР”РµР»РёС‚СЊ РЅР° РЅРѕР»СЊ РЅРµР»СЊР·СЏ\n";
 }
 		return 0;
 	}
 */
 
-//Уравнение
 /*
 int main()
 {
 	setlocale(LC_ALL, "rus");
 	double c, b, x;
 
-	cout << "\nВведите c ";
+	cout << "\nР’РІРµРґРёС‚Рµ c ";
 	cin >> c;
 
-	cout << "\nВведите b ";
+	cout << "\nР’РІРµРґРёС‚Рµ b ";
 	cin >> b;
 	if (b != 0)
 	{
@@ -56,27 +54,26 @@ int main()
 	}
 	if (b == 0 or (b == 0 and c == 0))
 	{
-		cout << "\nx-любое число\n";
+		cout << "\nx\n";
 	}
 
 	return 0;
 }
 */
 
-//Ещё уравнение
  /*
  int main()
  {
 	setlocale(LC_ALL, "rus");
 	double a, c, b, x1, D, x2,x;
 
-	cout << "\nВведите a ";
+	cout << "\nР’РІРµРґРёС‚Рµ a ";
 		cin >> a;
 	
-		cout << "\nВведите b ";
+		cout << "\nР’РІРµРґРёС‚Рµ b ";
 		cin >> b;
 
-		cout << "\nВведите c ";
+		cout << "\nР’РІРµРґРёС‚Рµ c ";
 		cin >> c;
 
 		D = b * b - 4 * a * c;
@@ -88,12 +85,12 @@ int main()
 		}
 				if (b==0 and a == 0 and c==0)
 				{
-					cout << "\nx-любое число\n";
+					cout << "\nx\n";
 				}
 
 				if (D<0)
 				{
-					cout << "\nОшибка\n";
+					cout << "\nРћС€РёР±РєР°\n";
 				}
 				if ((D>=0) and ((b and a)!=0 ))
 				{
@@ -107,30 +104,26 @@ int main()
  }
  */
  
-//Лампа со шторой
 /*
 int main()
  {
 	setlocale(LC_ALL, "rus");
 	bool a, c, b;
 
-	cout << "\nНа улице день? (Да = 1, Нет = 0) ";
 			cin >> a;
 
-			cout << "\nШторы закрыты? (Да = 1, Нет = 0) ";
 			cin >> b;
 
-			cout << "\nЛампа включена? (Да = 1, Нет = 0) ";
 			cin >> c;
 
 			if ((c == 1) or (a == 1 and b == 0))
 			{
-				cout <<"\nВ комнате светло\n";
+				
 			}
 
 			else
 			{
-				cout <<"\nВ комнате темно\n";
+				
 			}
 	return 0;
  }
